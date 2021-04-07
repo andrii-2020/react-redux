@@ -1,0 +1,90 @@
+
+.model{
+     position: fixed;
+     width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.model-body{
+
+    width: 300px;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+}
+.card-item{
+
+    margin: 5px 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    max-width: 100px;
+    max-height: 200px;
+
+}
+.card-item p {
+    font-size: 12px;
+    text-align: center;
+}
+.card-item img {
+    width: 50px;
+    height: 50px;
+}
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+.x{
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    color: transparent;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    outline: none;
+    overflow: hidden;
+    padding: 10px 0 0;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in;
+    margin-top: 23px;
+}
+.x::before,
+.x::after {
+    background-color: rgba(0, 0, 0, 0.34);
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transform-origin: center left;
+    transition: all 0.2s ease-in;
+    width: 141.4214px;
+    z-index: -1;
+}
+.x::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.x::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.x:hover {
+    color: #000000;
+}
+
+.x:hover::before,
+.x:hover::after {
+    height: 10px;
+    transform: rotate(0deg);
+}
